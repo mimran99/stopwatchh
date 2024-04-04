@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    
+        <!-- <link rel="stylesheet" href="watch.css 6"> -->
+    <style>
+       body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color:blue;
+    font-size: 50px;
+    padding-left: 45px;
+}
+.container{
+    text-align: center;
+    width: 600px;
+    margin-left: 30%;
+    border:2px solid white;
+    padding :26px;
+}
+.num{
+    display:flex;
+    color:green;
+    margin-left: 18%;
+    text-align: center;
+
+}
+h2{
+    font-size: 90px;
+}
+    button{
+        width:130px;
+        height: 45px;
+        background-color: red;
+        color: white;
+        font-size: 25px;
+        border:none;
+        cursor: pointer;
+    margin: 6px;
+    }
+    button:hover{
+        border: 2px solid white;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div class="container">
+        <div class="num">
+        <!-- <h2 id="hr">00</h2>
+        <h2>:</h2> -->
+        <h2 id="hour">00</h2>
+        <h2>:</h2>
+        <h2 id="mint">00</h2>
+        <h2>:</h2>
+        <h2 id="sec">00</h2>
+        </div>
+        <div class="btn">
+            <button onclick="Start">Start</button>
+            <button onclick="Stop">Stop</button>
+            <button onclick="Reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
